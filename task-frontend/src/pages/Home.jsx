@@ -21,7 +21,6 @@ export default function Home() {
   }
 
   function createShort() {
-    // Basic validations
     if (!isValidUrl(originalUrl)) {
       flog("warn", "api", "Invalid URL entered");
       alert("Please enter a valid URL (include http/https).");
@@ -41,7 +40,6 @@ export default function Home() {
         return;
       }
     } else {
-      // auto-generate until unique
       do { code = genCode(6); } while (!unique(code));
     }
 
@@ -131,3 +129,4 @@ export default function Home() {
     </div>
   );
 }
+
