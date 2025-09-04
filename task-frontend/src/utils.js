@@ -1,5 +1,3 @@
-// src/utils.js
-// Simple base62 generator (no external lib)
 const alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 export function genCode(len = 6) {
   let s = "";
@@ -19,3 +17,4 @@ export function minutesFromNow(n) {
 export function isExpired(item) {
   return Date.now() > item.expiresAt;
 }
+
