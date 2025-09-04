@@ -1,4 +1,3 @@
-// src/storage.js
 const KEY = "urls";
 
 export function loadAll() {
@@ -20,3 +19,4 @@ export function upsert(item) {
 export function byCode(code) {
   return loadAll().find(x => x.shortCode === code);
 }
+
